@@ -15,7 +15,17 @@
       "ProjectGuid": "f81379d5-00f5-4d68-896a-313d15e2f034",
       "DisplayName": "Variables",
       "ColorIndex": 2
+    },
+    "33ced16d-add2-405b-9c3f-fb21fcbb5212": {
+      "ProjectGuid": "33ced16d-add2-405b-9c3f-fb21fcbb5212",
+      "DisplayName": "OutputFunction_scanf",
+      "ColorIndex": 3
+    },
+    "30c88bcd-bb8f-4b86-8190-b19e0b9cc0df": {
+      "ProjectGuid": "30c88bcd-bb8f-4b86-8190-b19e0b9cc0df",
+      "DisplayName": "Operator",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }
