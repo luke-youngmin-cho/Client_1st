@@ -19,7 +19,7 @@ int main(void)
 	char str[20];
 	scanf("%s", str);
 	//scanf_s("%s", str, 10 * sizeof(char));
-	// sizeof 키워드
+	// sizeof 연산자
 	// 사용형태 : sizeof(자료형)
 	// 자료형에 해당하는 데이터 크기를 반환함
 
