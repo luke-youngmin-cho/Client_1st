@@ -45,7 +45,12 @@
       "ProjectGuid": "5d93e4df-4be9-4b87-ac7c-89ec7d41af64",
       "DisplayName": "ControlStatement_Loop_for",
       "ColorIndex": 8
+    },
+    "b8a08d18-4683-433d-9a0f-1e2d99b5466a": {
+      "ProjectGuid": "b8a08d18-4683-433d-9a0f-1e2d99b5466a",
+      "DisplayName": "Function",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 10
 }
