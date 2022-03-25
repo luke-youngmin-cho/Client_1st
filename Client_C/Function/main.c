@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include "test.h"
+
+
 
 // 반환형 함수이름 (매개변수1자료형 매개변수1이름, 매개변수2자료형 매개변수2이름, ... )
 // {
@@ -28,23 +31,23 @@ int main(void) {
 	return 0;
 }
 
-int doSomething() {
-
-	//int globalCount = 0; // 지역변수는 해당 중괄호 밖에서 정의된 모든 같은 이름의 변수보다 우선순위다. 
-
-	// static : 정적 키워드 , static 으로 선언되면 동적으로 메모리할당이 불가능하다. 프로그램이 끝날때까지 지워지지 않도록 데이터영역에 저장된다.
-	static int localCount; // 정적 지역변수 : 데이터영역에 저장되어 프로그램이 끝날떄까지 지워지지는 않지만, 해당 중괄호 안에서만 접근가능하다. 
-	
-	localCount++;
-	globalCount++;
-	printf("doSomething has been called :  %d times(global)\n", globalCount);
-	printf("doSomething has been called :  %d times(static local)\n", localCount);
-
-	if (localCount < 10) {
-		doSomething();// 재귀함수 : 함수 내에서 동일한 함수 호출
-	}
-	return 0;
-}
+//int doSomething() {
+//
+//	//int globalCount = 0; // 지역변수는 해당 중괄호 밖에서 정의된 모든 같은 이름의 변수보다 우선순위다. 
+//
+//	// static : 정적 키워드 , static 으로 선언되면 동적으로 메모리할당이 불가능하다. 프로그램이 끝날때까지 지워지지 않도록 데이터영역에 저장된다.
+//	static int localCount; // 정적 지역변수 : 데이터영역에 저장되어 프로그램이 끝날떄까지 지워지지는 않지만, 해당 중괄호 안에서만 접근가능하다. 
+//
+//	localCount++;
+//	globalCount++;
+//	printf("doSomething has been called :  %d times(global)\n", globalCount);
+//	printf("doSomething has been called :  %d times(static local)\n", localCount);
+//
+//	if (localCount < 10) {
+//		doSomething();// 재귀함수 : 함수 내에서 동일한 함수 호출
+//	}
+//	return 0;
+//}
 
 // 매개변수 도 지역변수 ( 매개변수 ⊂ 지역변수 )
 int sum(int a, int b) {
