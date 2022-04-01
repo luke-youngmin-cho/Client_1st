@@ -95,7 +95,17 @@
       "ProjectGuid": "6bc0f75a-5d94-4aec-b11c-217ea61e39aa",
       "DisplayName": "Union",
       "ColorIndex": 1
+    },
+    "5321c986-c0a5-4658-8ae8-7d5b51683f46": {
+      "ProjectGuid": "5321c986-c0a5-4658-8ae8-7d5b51683f46",
+      "DisplayName": "Enum",
+      "ColorIndex": 2
+    },
+    "35fc2639-53d7-489c-afde-d65664754725": {
+      "ProjectGuid": "35fc2639-53d7-489c-afde-d65664754725",
+      "DisplayName": "DynamicMemory",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }
