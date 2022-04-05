@@ -105,7 +105,12 @@
       "ProjectGuid": "35fc2639-53d7-489c-afde-d65664754725",
       "DisplayName": "DynamicMemory",
       "ColorIndex": 3
+    },
+    "acfe648f-02de-43ad-909b-b599fca004ed": {
+      "ProjectGuid": "acfe648f-02de-43ad-909b-b599fca004ed",
+      "DisplayName": "FileInOut",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
