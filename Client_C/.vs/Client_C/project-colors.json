@@ -110,7 +110,17 @@
       "ProjectGuid": "acfe648f-02de-43ad-909b-b599fca004ed",
       "DisplayName": "FileInOut",
       "ColorIndex": 4
+    },
+    "25a1d7ef-c2fa-4175-aef0-454fedbdddcd": {
+      "ProjectGuid": "25a1d7ef-c2fa-4175-aef0-454fedbdddcd",
+      "DisplayName": "FileDivision",
+      "ColorIndex": 5
+    },
+    "ed745c06-71c4-47f6-9a7b-709fafe0631c": {
+      "ProjectGuid": "ed745c06-71c4-47f6-9a7b-709fafe0631c",
+      "DisplayName": "DataStructure_DynamicArray",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }
