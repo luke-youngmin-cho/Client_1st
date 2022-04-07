@@ -120,7 +120,12 @@
       "ProjectGuid": "ed745c06-71c4-47f6-9a7b-709fafe0631c",
       "DisplayName": "DataStructure_DynamicArray",
       "ColorIndex": 6
+    },
+    "e5d54712-3e2b-400b-a297-eb876de77544": {
+      "ProjectGuid": "e5d54712-3e2b-400b-a297-eb876de77544",
+      "DisplayName": "DataStructure_LinkedList",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }
