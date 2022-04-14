@@ -25,7 +25,12 @@
       "ProjectGuid": "f648ba99-bd97-4657-a89a-076c3135270b",
       "DisplayName": "Functions",
       "ColorIndex": 3
+    },
+    "82e2856a-ed45-4bc5-b0f7-7e693c8cb077": {
+      "ProjectGuid": "82e2856a-ed45-4bc5-b0f7-7e693c8cb077",
+      "DisplayName": "Class",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
