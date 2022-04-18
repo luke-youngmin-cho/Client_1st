@@ -30,7 +30,12 @@
       "ProjectGuid": "82e2856a-ed45-4bc5-b0f7-7e693c8cb077",
       "DisplayName": "Class",
       "ColorIndex": 4
+    },
+    "d16716df-9ed0-4445-a0c8-66cbc56a6306": {
+      "ProjectGuid": "d16716df-9ed0-4445-a0c8-66cbc56a6306",
+      "DisplayName": "DynamicArray",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
