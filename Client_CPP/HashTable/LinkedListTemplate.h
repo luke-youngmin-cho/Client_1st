@@ -21,6 +21,7 @@
 template <typename T>
 class Node
 {
+public:
 	T _item;
 	Node* _prev;
 	Node* _next;
@@ -36,6 +37,7 @@ private:
 	// C 때 했던거 참고
 	// 멤버함수는 
 public:
+	int Count();
 	void AddFirst(T item);
 	void AddLast(T item);
 	void AddBefore(Node<T>& target, T item);
@@ -50,6 +52,19 @@ public:
 	bool RemoveLast(T item);
 	void Delete();
 };
+
+template<typename T>
+inline int LinkedList<T>::Count()
+{
+	int tmpCount = 0;
+	_tmp = _first;
+	while (_tmp != nullptr)
+	{
+		_tmp = _tmp->_next;
+		tmpCount++;
+	}
+	return tmpCount;
+}
 
 /// <summary>
 /// 리스트의 가장 앞에 신규 노드 삽입하는 함수
@@ -206,11 +221,12 @@ inline Node<T>& LinkedList<T>::Find(T item)
 	while (_tmp != nullptr)
 	{
 		if (_tmp->_item == item)
-			return _tmp;
+			return *_tmp;
 
 		_tmp = _tmp->_next;  // 그다음 노드 검색
 	}
-	return nullptr;
+	_tmp = nullptr;
+	return *_tmp;
 }
 
 template<typename T>
@@ -220,11 +236,12 @@ inline Node<T>& LinkedList<T>::FindLast(T item)
 	while (_tmp != nullptr)
 	{
 		if (_tmp->_item == item)
-			return _tmp;
+			return *_tmp;
 
 		_tmp = _tmp->_prev;  // 그 전 노드 검색
 	}
-	return nullptr;
+	_tmp = nullptr;
+	return *_tmp;
 }
 
 template<typename T>
@@ -245,7 +262,7 @@ inline bool LinkedList<T>::Remove(T item)
 	bool isRemoved = false;
 
 	// 노드 검색
-	_tmp = Find(item);
+	*_tmp = Find(item);
 
 	// 노드 찾았으면
 	if (_tmp != nullptr) {
@@ -269,7 +286,7 @@ inline bool LinkedList<T>::RemoveLast(T item)
 	bool isRemoved = false;
 
 	// 노드 검색
-	_tmp = FindLast(item);
+	*_tmp = FindLast(item);
 
 	// 노드 찾았으면
 	if (_tmp != nullptr) {
@@ -291,7 +308,7 @@ template<typename T>
 inline void LinkedList<T>::Delete()
 {
 	_tmp = _first;
-	while (_tmp != nul)
+	while (_tmp != nullptr)
 	{
 		_tmp2 = _tmp->_next; // 현재 노드 다음거 임시저장
 		delete _tmp; // 현재 노드 메모리 해제
