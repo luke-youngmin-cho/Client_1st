@@ -122,7 +122,7 @@ template<typename T>
 inline void LinkedList<T>::AddBefore(Node<T>& target, T item)
 {
 	_tmp = _first; // 첫 노드부터 검색시작
-	while (_tmp = nullptr)
+	while (_tmp == nullptr)
 	{
 		// 노드 찾았으면
 		if (_tmp == target) {
@@ -146,7 +146,7 @@ template<typename T>
 inline void LinkedList<T>::AddBefore(T targetItem, T item)
 {
 	_tmp = _first; // 첫 노드부터 검색시작
-	while (_tmp = nullptr)
+	while (_tmp == nullptr)
 	{
 		// 노드 찾았으면
 		if (_tmp->_item == targetItem) {
