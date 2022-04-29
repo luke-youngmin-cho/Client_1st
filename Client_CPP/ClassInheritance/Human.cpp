@@ -15,3 +15,12 @@ void Human::PrintAllClothes()
 	}
 	std::cout << std::endl;
 }
+
+void Human::TwoLeggedWalk()
+{
+	std::cout << "이족보행을 실시합니다" << std::endl;
+}
+
+void Human::FourLeggedWalk()
+{
+}
