@@ -65,5 +65,8 @@
     <ClCompile Include="Human_White.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ITwoLeggedWalker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,4 +1,17 @@
 #pragma once
+/// <summary>
+/// 작성자 : luke
+/// 작성일 : 2022.05.02
+/// 최종수정일 : 
+/// 내용 : 
+/// 
+/// 
+/// 
+/// 
+/// </summary>
+
+// 가상클래스 
+// 순수가상함수를 하나이상 포함하는 클래스 
 class Creature
 {
 public : 
@@ -10,6 +23,10 @@ public:
 	// virtual : 가상 함수 키워드
 	// 가상 함수로 정의된 함수는 호출 되었을때 자식객체가 해당 멤버함수를 override 하고있다면
 	// override 된 함수를 호출한다.
+
+	/// <summary>
+	/// 숨쉬는 함수
+	/// </summary>
 	virtual void Breath();
 
 	// 순수 가상함수 : virtual 반환형 함수이름(인자) = 0;

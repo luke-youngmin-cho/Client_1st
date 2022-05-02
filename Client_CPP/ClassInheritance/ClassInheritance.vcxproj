@@ -156,6 +156,7 @@
     <ClCompile Include="Human_Black.cpp" />
     <ClCompile Include="Human_White.cpp" />
     <ClCompile Include="Human_Yellow.cpp" />
+    <ClCompile Include="ITwoLeggedWalker.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -7,6 +7,14 @@
 class Dog :
     public Creature , public IFourLeggedWalker
 {
+private :
+    bool followEnable;
+
+    // friend : friend class 클래스명 
+    // 이라고 선언된 클래스타입의 객체들은 접근제한자에 상관없이 멤버에 접근 가능하도록 해준다.
+    // 코드 꼬이니까 왠만하면 안쓰도록 설계하자
+    friend class Human; 
+
 public : 
     int tailLength;
 

@@ -4,6 +4,12 @@
 void Human::WearCloth(string cloth)
 {
 	clothes.Add(cloth);
+	std::cout << "내가입고 있는 옷들이야";
+	for (int i = 0; i < clothes.Length(); i++)
+	{
+		std::cout << clothes[i] << ", ";
+	}
+	std::cout << std::endl;
 }
 
 void Human::PrintAllClothes()
@@ -23,4 +29,9 @@ void Human::TwoLeggedWalk()
 
 void Human::FourLeggedWalk()
 {
+}
+
+void Human::MakeDogFollowMe(Dog& dog)
+{
+	dog.followEnable = true;
 }

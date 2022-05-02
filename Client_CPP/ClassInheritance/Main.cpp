@@ -8,6 +8,7 @@
 #include "Human_Black.h"
 #include "Human_White.h"
 
+
 using namespace std;
 int main() {
 	/*
@@ -44,12 +45,11 @@ int main() {
 		humans[i + 2] = new Human_White();
 	}
 
+	// 순수 가상함수가 포함된 클래스는 인스턴스화가 불가능함. 
 	ITwoLeggedWalker* twoLeggedWalkers[99];
 	for (int i = 0; i < 99; i += 3)
 	{
-		twoLeggedWalkers[i] = new Human_Yellow();
-		twoLeggedWalkers[i + 1] = new Human_Black();
-		twoLeggedWalkers[i + 2] = new Human_White();
+		twoLeggedWalkers[i] = humans[i];
 	}
 	
 	for (int i = 0; i < 99; i++)
@@ -124,9 +124,18 @@ int main() {
 	delete human_black1;
 	delete human_white1;
 	*/
-	for (int i = 99; i > -1; i--)
-	{
-		delete twoLeggedWalkers[i];
-	}
+	
+	// 가상클래스 비교
+	
+	// 되는 이유 :가상클래스를 상속받고 부모의 멤버순수가상함수를 재정의 한 클래스를 인스턴스화 했음
+	Human_Yellow* yelloMan = new Human_Yellow(); 
+	yelloMan->Breath();
+	// 안되는 이유 : 가상클래스를 상속받은 클래스를 인스턴스화 하려 했지만,
+	// 멤버순수가상함수를 재정의(override) 하지 않았음
+	//Human* human = new Human(); 
+
+	// 안되는 이유 : 가상클래스를 직접 인스턴스화 하려고했음
+	//Creature* creature = new Creature(); 
+
 	return 0;
 }
