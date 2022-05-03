@@ -65,7 +65,12 @@
       "ProjectGuid": "4e430508-71fb-4869-bf3a-71e3728540c6",
       "DisplayName": "SolidExample",
       "ColorIndex": 11
+    },
+    "ac4aed91-b188-4a32-a76b-0a534e36d06c": {
+      "ProjectGuid": "ac4aed91-b188-4a32-a76b-0a534e36d06c",
+      "DisplayName": "STLPractice",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 13
 }

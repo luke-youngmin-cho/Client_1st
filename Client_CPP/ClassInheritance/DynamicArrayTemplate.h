@@ -9,6 +9,7 @@ private:
 	const int DEFAULT_SIZE;
 
 public:
+
 	int Length();
 	void Add(T item);
 	int Find(T item); 
