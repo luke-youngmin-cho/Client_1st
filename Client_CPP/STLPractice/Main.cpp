@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <list>
 #include "DynamicArrayTemplate.h"
 
 using namespace std;
@@ -41,16 +42,28 @@ int main() {
 	//cout << tmpValue << endl;
 
 	DynamicArray<int>::Iterator iter_Begin = tmpDA.Begin();
+
+	cout << "erase begin" << *tmpDA.Erase(iter_Begin) << endl;
+
 	for (; iter_Begin < tmpDA.End(); ++iter_Begin)
 	{
 		cout << *iter_Begin << endl;
 	}
 
-	//iter_Begin++;
+		//iter_Begin++;
 	//cout << *(iter_Begin++) << endl;
 	//cout << *iter_Begin << endl;
 	//++iter_Begin;
 	//++iter_Begin;
+
+	list<int> tmpList;
+	tmpList.push_front(10);
+	tmpList.push_front(10);
+	tmpList.push_back(20);
+	tmpList.push_back(30);
+	list<int>::iterator listIter = tmpList.begin();
+	listIter++;
+
 
 	return 0;
 }
