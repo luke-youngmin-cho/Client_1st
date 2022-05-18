@@ -16,6 +16,8 @@
 // 함수의 기본형태
 // "출력형태" "함수이름" (매개변수)
 // 매개변수가 없고 int 형을 출력하는 함수, 이름은 main
+
+
 int main(void) 
 {	
 	printf("Hello World !");
