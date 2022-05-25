@@ -75,7 +75,12 @@
       "ProjectGuid": "9acfecf3-872e-4b5e-b138-72a38d5c11a7",
       "DisplayName": "Example_CallBack",
       "ColorIndex": 13
+    },
+    "9fd6bc9e-e08c-4fc4-8f9b-2e07accadb00": {
+      "ProjectGuid": "9fd6bc9e-e08c-4fc4-8f9b-2e07accadb00",
+      "DisplayName": "SortExamples",
+      "ColorIndex": 14
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 15
 }

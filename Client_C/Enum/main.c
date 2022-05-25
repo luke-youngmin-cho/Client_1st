@@ -3,6 +3,7 @@
 
 // FSM ( Finite State Machine )
 // 유한 상태 머신
+
 enum JumpState {
 	Idle,
 	PrepareToJump,
@@ -20,6 +21,21 @@ enum PlayerState {
 	Jump,
 	Hurt,
 };
+
+enum LAYER_MASK_NOT_OK {
+	GHOST, // bit ... 0000
+	PLAYER, // bit ... 0001	
+	WALL, // bit ... 0010
+	GROUND, // bit ... 0011
+};
+
+enum LAYER_MASK_OK {
+	GHOST = 0 << 0 , // bit ... 0000
+	PLAYER = 1 << 0, // bit ... 0001	
+	WALL = 1 << 1, // bit ... 0010
+	GROUND = 1 << 2, // bit ... 0100
+};
+
 
 // playerState
 // 설명
