@@ -80,7 +80,12 @@
       "ProjectGuid": "9fd6bc9e-e08c-4fc4-8f9b-2e07accadb00",
       "DisplayName": "SortExamples",
       "ColorIndex": 14
+    },
+    "88e96b6b-1505-4a3e-ac19-4f6121532fe3": {
+      "ProjectGuid": "88e96b6b-1505-4a3e-ac19-4f6121532fe3",
+      "DisplayName": "STLAlgorithm",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 15
+  "NextColorIndex": 0
 }

@@ -18,8 +18,8 @@ int main() {
 	std::cout << "인설션 소트 시작 : " << arr3 << std::endl;
 	SortExamples::InsertionSort(arr3, 10);
 
-	int const mergeSortArrayCount = 30;
-	int arr4[mergeSortArrayCount] = { 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+	int const mergeSortArrayCount = 10;
+	int arr4[mergeSortArrayCount] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 	std::cout << "머지 소트 시작 : " << arr4 << std::endl;
 	SortExamples::MergeSort(arr4, 0, mergeSortArrayCount - 1);
 
@@ -28,5 +28,13 @@ int main() {
 		std::cout << arr4[i];
 	}
 
+	int arr5[10] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+	std::cout << "퀵 소트 시작 : " << arr5 << std::endl;
+	SortExamples::QuickSort(arr5, 0, 9);
+
+	for (int i = 0; i < 10; i++)
+	{
+		std::cout << arr5[i];
+	}
 	return 0;
 }
