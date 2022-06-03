@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+int SortExamples::testCount1;
+int SortExamples::testCount2;
 void SortExamples::Merge(int arr[], int start, int end, int mid)
 {
 	static int mergeCount;
@@ -193,12 +195,14 @@ void SortExamples::QuickSort(int arr[], int start, int end)
 void SortExamples::HeapSort(int arr[], int length)
 {
 	// 힙 자료구조로 변환
-	Heapify_TopDown(arr, length);
+	//Heapify_TopDown(arr, length);
+	Heapify_BottomUp(arr, length);
 
 	for (int i = 0; i < length; i++)
 	{
-		std::cout << arr[i];
+		std::cout << arr[i] << ", ";
 	}
+	std::cout << std::endl;
 
 	// 변환된 힙 자료구조 정렬 하면서 기본 배열 자료구조로 변환
 	int end = length - 1;
@@ -221,11 +225,24 @@ void SortExamples::Heapify_TopDown(int arr[], int length)
 	{		
 		SIFT_Up(arr, 0, end++);
 	}
+	std::cout << "Swap 횟수 : " << testCount1 << std::endl;
+}
+
+void SortExamples::Heapify_BottomUp(int arr[], int length)
+{
+	int end = length - 1;
+	int current = end - 1;
+
+	while (current >= 0)
+	{
+		SIFT_Down(arr, end, current--);
+	}
+	std::cout << "Swap 횟수 : " << testCount1 << std::endl;
 }
 
 void SortExamples::SIFT_Up(int arr[], int root, int current)
 {
-	int parent = current / 2;
+	int parent = (current - 1) / 2;
 	while (current > root)
 	{
 		if (arr[parent] < arr[current])
@@ -233,9 +250,10 @@ void SortExamples::SIFT_Up(int arr[], int root, int current)
 			int tmp = arr[parent];
 			arr[parent] = arr[current];
 			arr[current] = tmp;
-
+			
 			current = parent;
-			parent = current / 2;
+			parent = (current - 1) / 2;
+			testCount1++;
 		}
 		else
 		{
@@ -246,7 +264,7 @@ void SortExamples::SIFT_Up(int arr[], int root, int current)
 
 void SortExamples::SIFT_Down(int arr[], int end, int current)
 {
-	int parent = current / 2;
+	int parent = (current - 1) / 2;
 	bool doSwap = false;
 
 	while (current <= end)
@@ -268,6 +286,7 @@ void SortExamples::SIFT_Down(int arr[], int end, int current)
 			doSwap = false;
 			parent = current;
 			current = parent * 2 + 1;
+			testCount1++;
 		}
 		else
 		{
