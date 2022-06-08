@@ -90,7 +90,12 @@
       "ProjectGuid": "7cc731cb-9821-46d8-810b-8d893fc901d1",
       "DisplayName": "PriorityQueueExample",
       "ColorIndex": 0
+    },
+    "96cc2240-f04f-4b21-9c45-b3a3efb940d5": {
+      "ProjectGuid": "96cc2240-f04f-4b21-9c45-b3a3efb940d5",
+      "DisplayName": "BinarySearch",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

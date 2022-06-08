@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 using namespace std;
 
 class Player {
@@ -13,15 +14,15 @@ public :
 		this->score = score;
 	}
 
-	bool operator <(Player& player) const {
+	bool operator <(const Player& player) const{
 		return this->score < player.score;
 	}
 
-	bool operator <=(Player& player) const {
+	bool operator <=(Player& player) {
 		return this->score <= player.score;
 	}
 
-	bool operator >(Player& player) {
+	bool operator >(const Player& player) const {
 		return this->score > player.score;
 	}
 
@@ -32,7 +33,7 @@ public :
 
 bool IsABeatB(Player& player1, Player& player2) 
 {
-	return player1 > player2;
+	return player1 >= player2;
 }
 
 int main() {
@@ -100,6 +101,35 @@ int main() {
 	for (int i = 0; i < players.size(); i++)
 		cout << players[i].nickName << ", ";
 	cout << endl;
+
+	// 원소들을 누적하는
+	// accumulate(시작, 끝, 초기값)
+	int acc = accumulate(arr1, arr1 + 10, 10);
+	cout << "누적값: " << acc << endl;
+	
+	// 부분합, 원소들을 처음부터 끝까지 합하는
+	int arr2[10];
+	partial_sum(arr1, arr1 + 10, arr2); // 부분합
+	partial_sum(arr1 + 1, arr1 + 10, arr2, multiplies<int>()); // 부분곱
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "부분합 : " << arr2[i] << endl;
+	}
+
+	int arr3[10];
+	adjacent_difference(arr1, arr1 + 10, arr3);
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "차이 : "<< arr3[i] << endl;
+	}
+
+	int coord1[3] = { 1,5,3 };
+	int coord2[3] = { 2,5,4 };
+	// 벡터의 내적 
+
+	int dotResult = inner_product(coord1, coord1 + 3, coord2, 0);
+	cout << dotResult << endl;
+	
 
 	return 0;
 }
